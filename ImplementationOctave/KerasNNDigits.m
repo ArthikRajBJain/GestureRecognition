@@ -1,5 +1,7 @@
 load DIGITS.csv
 
+cd '/home/arthik/TENACIOUS/PYTHON/GESTURE_KEYBOARD/TrainedWeights'
+
 load Gesture_Weights.h5
 
 index = input('Enter the index of the data to predict : ')
@@ -14,3 +16,5 @@ SOFTMAX = exp(OU-max(OU))./sum(exp(OU-max(OU)))
 
 printf('The predicted Integer is : %d\n',ind-1)
 printf('Detected with %f%% confidence.\n',num*100);
+
+cd '/home/arthik/TENACIOUS/PYTHON/GESTURE_KEYBOARD/ImplementationOctave'

@@ -1,8 +1,8 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<math.h>
-#include</home/arthik/TENACIOUS/CPP/NeuralNetworkDigits/DigitsData.h>
-#include</home/arthik/TENACIOUS/CPP/NeuralNetworkDigits/IN.h>
+#include</home/arthik/TENACIOUS/PYTHON/GESTURE_KEYBOARD/ImplementationC/DigitsData.h>
+#include</home/arthik/TENACIOUS/PYTHON/GESTURE_KEYBOARD/ImplementationC/IN.h>
 
 void multiply(float *,int,int,float *,int,int,float *,int *,int *);
 void add(float *,int,int,float *,int,int,float *,int *,int *);
@@ -21,9 +21,9 @@ void main()
 	p2 = &d0kernal_0[0][0];
 	p3 = result_mul;
 	row1 = 1;
-	col1 = 784;
-	row2 = 784;
-	col2 = 128;
+	col1 = 123;
+	row2 = 123;
+	col2 = 10;
 
 	multiply(p1,row1,col1,p2,row2,col2,p3,&row3,&col3);
 
@@ -33,7 +33,7 @@ void main()
 	row1 = row3;
 	col1 = col3;
 	row2 = 1;
-	col2 = 128;
+	col2 = 10;
 
 	add(p1,row1,col1,p2,row2,col2,p3,&row3,&col3);
 	ReLU(p3,row3,col3);
@@ -43,8 +43,8 @@ void main()
 	p3 = result_mul;
 	row1 = row3;
 	col1 = col3;
-	row2 = 128;
-	col2 = 128;
+	row2 = 10;
+	col2 = 10;
 
 	multiply(p1,row1,col1,p2,row2,col2,p3,&row3,&col3);
 
@@ -54,7 +54,7 @@ void main()
 	row1 = row3;
 	col1 = col3;
 	row2 = 1;
-	col2 = 128;
+	col2 = 10;
 
 	add(p1,row1,col1,p2,row2,col2,p3,&row3,&col3);
 	ReLU(p3,row3,col3);
@@ -64,8 +64,8 @@ void main()
 	p3 = result_mul;
 	row1 = row3;
 	col1 = col3;
-	row2 = 128;
-	col2 = 10;
+	row2 = 10;
+	col2 = 4;
 
 	multiply(p1,row1,col1,p2,row2,col2,p3,&row3,&col3);
 
@@ -75,7 +75,7 @@ void main()
 	row1 = row3;
 	col1 = col3;
 	row2 = 1;
-	col2 = 10;
+	col2 = 4;
 
 	add(p1,row1,col1,p2,row2,col2,p3,&row3,&col3);
 
