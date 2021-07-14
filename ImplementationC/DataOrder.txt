@@ -1,0 +1,7 @@
+float d0kernal_0[784][128];
+float d0bias_0[1][128];
+float d1kernal_0[128][128];
+float d1bias_0[1][128];
+float d2kernal_0[128][10];
+float d2bias_0[1][10];
+float IN[1][784];
